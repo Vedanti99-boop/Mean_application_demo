@@ -1,0 +1,90 @@
+Mongo Version 6 onwards
+
+ 
+
+https://www.mongodb.com/try/download/shell
+download shell
+copy content of bin folder
+to the bin folder of mongodb
+
+ 
+
+3. type mongosh
+
+ 
+
+commands:
+
+ 
+
+a. To display database 
+show dbs
+
+ 
+
+b. to get insider a database
+use datbasename
+
+ 
+
+c. display collections
+
+ 
+
+db.product.find()
+
+commands:
+
+ 
+
+a. To display database 
+show dbs
+
+ 
+
+b. to get insider a database
+use datbasename
+
+ 
+
+c. display collections
+
+ 
+
+db.createCollection("supplier")
+
+ 
+
+d. Insert a document into collection
+
+ 
+
+db.supplier.insert({"code":1,"name":"supplier 1","city":"chennai","zipcode":494949})
+db.supplier.insert({"code":2,"name":"supplier 2","city":"bengaluru","zipcode":560077})
+
+ 
+
+e. find
+db.supplier.find({"city":"bengaluru"})
+
+ 
+
+
+f. remove a document
+
+ 
+
+db.supplier.remove()
+
+ 
+
+db.supplier.remove({"city":"bengaluru"})
+
+ 
+
+g. update
+
+ 
+
+db.supplier.update({city:"chennai"},
+{$set:{city:"Chennai new "}});
